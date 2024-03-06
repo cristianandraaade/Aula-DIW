@@ -1,0 +1,83 @@
+body {
+
+    font-family: "Inconsolata", monospace;
+    background-image: url("assets/imagens/RubberSoul.jpg");
+}
+
+h1 {
+    align-self: center;
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.esquerda {
+    border-radius: 15px;
+    border: black solid 1px;
+    display: flex;
+    width: 50%;
+    color: white;
+    align-items: right;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 5px;
+}
+
+.direita {
+    border-radius: 15px;
+    border: black solid 1px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 5px;
+
+
+}
+
+
+.fotoperfil {
+    width: 200px;
+    height: 200px;
+    border: white solid 2px;
+    align-self: left;
+
+}
+
+.padding {
+    padding: 10%;
+    align-self: left;
+}
+
+.informações {
+
+    display: flex;
+    margin: 20px;
+    width: 70%;
+    flex-direction: column;
+
+}
+
+.layout {
+    width: 100%;
+    display: flex;
+
+}
+
+.github {
+    text-decoration: underline;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.github:hover {
+    color: rgb(172, 161, 161);
+    transition: 0.3s;
+}
