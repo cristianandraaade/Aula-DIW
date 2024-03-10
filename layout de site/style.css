@@ -1,16 +1,17 @@
 body{
-    
+    display:flex;
+    flex-direction: column;
+}
+#logotipo{
+    width: 25px;
+    height:25px;
+    border:white solid 3px;
 }
 
-.head{
-    border:red solid 3px;
+.head{   
+    background-color: black;
 }
 .side{
-    border:yellow solid 3px;
-    display:flex;
-    justify-content: left;
-
 }
-.content{
-    border:blue solid 3px;
+.content{  
 }
