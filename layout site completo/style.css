@@ -1,80 +1,161 @@
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
+
     font-family: "Bebas Neue", sans-serif;
     width: 100%;
     display: flex;
-
+    gap: 10px;
 
 }
 
 header {
-    border: blue solid 1px;
+
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    height: 130px;
     position: fixed;
     width: 100%;
     background-color: gray;
 
     & img {
-        width: 150px;
-        height: 150px;
+
+        width: 130px;
+        height: 130px;
         border: white solid 1px;
 
     }
 
     & h1 {
+
         text-align: center;
-        border: green 1px solid;
-        height: 150px;
+        height: 130px;
         width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 450px;
+        font-size: 50px;
+
     }
 
-    & button {
-        border: yellow solid 1px;
-        border-radius: 10px;
-        height: 50px;
-        width: 100px;
+    & div {
+
+        display: flex;
+        align-items: center;
+        width: 400px;
+        justify-content: space-between;
+
+        & button {
+
+            border-radius: 10px;
+            height: 50px;
+            width: 100px;
+            background-color: rgb(27, 27, 27);
+
+            & a {
+
+                font-family: "Bebas Neue", sans-serif;
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+aside {
+
+    display: flex;
+    width: 200px;
+    height: 1000px;
+    margin-top: 176px;
+    flex-direction: column;
+    align-items: center;
+
+    & label {
+
+        font-size: 20px;
+        margin-left: 5px;
+
+    }
+
+    & nav {
+
+        font-size: 20px;
+        padding-top: 50px;
+
+        & ul {
+
+            list-style: none;
+
+        }
 
         & a {
-            font-family: "Bebas Neue", sans-serif;
+
             text-decoration: none;
             color: black;
 
         }
     }
 
-    & button:hover {
-        transition: 3s;
-        background-color: rgb(255, 255, 255);
-    }
+    & .barradepesquisa {
 
+        display: flex;
+        flex-direction: column;
+
+        & img {
+            width: 10px;
+            height: 10px;
+        }
+
+
+    }
 }
 
-aside {
-    border: orange solid 1px;
+main {
+
     display: flex;
-    width: 200px;
+    width: 1700px;
     height: 1000px;
-    margin-top: 151px;
+    margin-top: 176px;
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
 
-    & label {
-        font-size: 20px;
+    & div {
 
-    }
+        height: 333px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
-    & nav {
-        font-size: 20px;
-        border: pink solid 1px;
+        & h1 {
+
+            text-align: center;
+            height: 50px;
+            width: 1700px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        & iframe {
+
+            width: 535px;
+            height: 250px;
+            margin-top: 30px;
+            border: none;
+
+        }
     }
 }
