@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    display: flex;
+
+
+}
+
+header {
+    border: blue solid 1px;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+
+    & img {
+        width: 150px;
+        height: 150px;
+        border: white solid 1px;
+
+    }
+
+    & h1 {
+        text-align: center;
+        border: green 1px solid;
+        height: 150px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & button {
+        border: yellow solid 1px;
+        border-radius: 10px;
+        height: 50px;
+        width: 100px;
+
+        & a {
+            font-family: "Bebas Neue", sans-serif;
+            text-decoration: none;
+            color: black;
+
+        }
+    }
+
+    & button:hover {
+        transition: 3s;
+        background-color: rgb(255, 255, 255);
+    }
+
+}
+
+aside {
+    border: orange solid 1px;
+    display: flex;
+    width: 200px;
+    height: 1000px;
+    margin-top: 151px;
+    flex-direction: column;
+    align-items: center;
+
+    & label {
+        font-size: 20px;
+
+    }
+
+    & nav {
+        font-size: 20px;
+        border: pink solid 1px;
+    }
+}
