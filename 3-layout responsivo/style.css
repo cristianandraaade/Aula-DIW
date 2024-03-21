@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    align-items: center;
+
+    & h1 {
+        color: white;
+        font-size: 30px;
+    }
+
+    & img {
+        display: none;
+    }
+
+    & nav {
+        width: 33vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border: 1px solid white;
+            border-radius: 15px;
+            padding: 5px;
+        }
+
+        & a:hover {
+            transition: 0.2s;
+            color: rgba(128, 128, 128, 0.74);
+        }
+
+    }
+}
+
+main {
+    margin-top: 70px;
+    display: flex;
+    gap: 1vw;
+
+    & aside {
+
+        width: 25vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & h1 {
+            margin-top: 3vw;
+        }
+
+        & nav {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3vw;
+
+            & a {
+                text-decoration: none;
+                color: black;
+                border: black solid 1px;
+                border-radius: 15px;
+                font-size: 30px;
+                margin-top: 1vw;
+                padding: 5px;
+            }
+
+            & a:hover {
+                transition: 0.2s;
+                color: gray;
+            }
+        }
+
+        & h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        & nav {
+            font-size: 20px;
+        }
+
+    }
+
+    & section {
+        width: 75vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+
+        & .carrossel {
+            width: 49vw;
+            height: 350px;
+            background-color: rgba(128, 128, 128, 0.678);
+            margin-left: 13vw;
+            margin-top: 1vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: black solid 1px;
+
+            & h2 {
+                font-size: 40px;
+            }
+        }
+
+        & .content {
+            display: flex;
+            flex-direction: wrap;
+            gap: 4vw;
+
+            & .card1 {
+                border: gray solid 1px;
+                border-radius: 20px;
+                width: 25vw;
+                display: flex;
+                flex-direction: column;
+                margin-right: 1vw;
+                padding: 10px;
+
+                & span {
+                    height: 10vw;
+                    background-color: rgba(128, 128, 128, 0.486);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1422px) {
+    header {
+        & img {
+            display: none;
+        }
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+
+        & aside {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            border: black solid 1px;
+
+            & nav {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        & section {
+            width: 100vw;
+            align-items: center;
+
+            & .carrossel {
+                margin-left: 1vw;
+                border: black solid 1px;
+            }
+        }
+    }
+}
+
+@media (max-width:908px) {
+    header {
+        & nav {
+            display: none;
+        }
+
+        & img {
+            display: inline;
+        }
+    }
+    main{
+        & section{
+            & .carrossel{
+                width: 90%;
+                border: black solid 1px;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    main {
+       & section {
+            width: 100%;
+            & .carrossel{
+                width: 90%;
+                border: black solid 1px;
+            }
+            & .content {
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                & .card1 {
+                    width: 90%;
+                    
+
+                    & span {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:310px){
+    & header{
+        & h1{
+            font-size:20px ;
+        }
+        & img{
+            width: 32px;            
+        }
+    }
+}

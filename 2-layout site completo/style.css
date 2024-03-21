@@ -12,7 +12,7 @@ body {
     width: 100%;
     display: flex;
     gap: 10px;
-    
+
 
 }
 
@@ -29,7 +29,7 @@ header {
 
         width: 130px;
         height: 130px;
-        
+
 
     }
 
@@ -51,7 +51,7 @@ header {
         display: flex;
         align-items: center;
         width: 400px;
-        justify-content: space-between;        
+        justify-content: space-between;
         padding-right: 20px;
 
         & button {
@@ -70,7 +70,8 @@ header {
 
             }
         }
-        & button:hover{
+
+        & button:hover {
             background-color: gray;
             transition: 0.2s;
         }
@@ -91,6 +92,7 @@ aside {
         font-size: 20px;
         margin-left: 5px;
 
+
     }
 
     & nav {
@@ -98,9 +100,11 @@ aside {
         font-size: 20px;
         padding-top: 50px;
 
+
         & ul {
 
             list-style: none;
+
 
         }
 
@@ -135,7 +139,9 @@ aside {
 
     & h1 {
         font-size: 25px;
-        margin-top: 10px;
+        margin-top: 20px;
+        
+
     }
 }
 
@@ -147,9 +153,10 @@ main {
     margin-top: 176px;
     flex-direction: column;
     gap: 30px;
+    
 
     & div {
-        
+
         height: 333px;
         display: flex;
         flex-wrap: wrap;
@@ -170,7 +177,7 @@ main {
         }
 
         & iframe {
-            
+
             width: 510px;
             height: 250px;
             margin-top: 30px;
@@ -179,6 +186,8 @@ main {
         }
     }
 }
+
+
 
 /* Oi pra quem for corrigir essa atividade, gostaria de pontuar uma coisa sobre a maneira que eu fiz este codigo. Eu sei que na atividade estava pedindo para
 dividir os blocos em no minimo 3 divs dentro do header,aside e main, porém eu optei por fazer dessa maneira (utilizando o &)
