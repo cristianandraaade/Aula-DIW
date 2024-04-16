@@ -384,7 +384,6 @@ main {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border: red 1px solid;
 
         & a {
             text-decoration: none;
@@ -521,7 +520,6 @@ main {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border: red 1px solid;
 
         & a {
             text-decoration: none;
@@ -613,7 +611,6 @@ main {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        border: red 1px solid;
 
         & a {
             text-decoration: none;
