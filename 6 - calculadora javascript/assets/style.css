@@ -24,7 +24,6 @@ main {
     & .calculadoramedia {
         display: flex;
         width: 50%;
-        border: solid 1px blue;
         flex-direction: column;
         height: 46vw;
 
@@ -38,7 +37,6 @@ main {
         & .calcmedia {
             display: flex;
             flex-direction: column;
-            border: solid 1px red;
             margin-top: 5vw;
 
             & h3 {
@@ -70,7 +68,7 @@ main {
 
             }
 
-            & #calcularmedia {
+            & #media {
                 width: 30%;
                 align-self: center;
                 margin-top: 30px;
@@ -78,7 +76,7 @@ main {
                 border-radius: 30px;
             }
 
-            & #calcularmedia:hover {
+            & #media:hover {
                 transition: 0.2s;
                 background-color: rgba(3, 175, 3, 0.315);
             }
@@ -88,7 +86,6 @@ main {
     & .calculadorabasica {
         display: flex;
         width: 50%;
-        border: solid 1px green;
         flex-direction: column;
 
         & h2 {
@@ -101,7 +98,6 @@ main {
         & .calcbasica {
             display: flex;
             flex-direction: column;
-            border: solid 1px red;
             margin-top: 5vw;
             width: 100%;
 
