@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <h1>Lista de tarefas</h1>
+        <div class="tarefas">
+            <div class="conteudo">
+                <section class="inputs">
+                    <span class="label">
+                        <label id="centerTarefa1" for="dataTarefa">Data da tarefa</label>
+                        <label id="centerTarefa2" for="horaTarefa">Hora da tarefa</label>
+                        <label id="centerTarefa3" for="inserirTarefa">Tarefa</label>
+                    </span>
+                    <div class="input">
+                        <input id="dataTarefa" type="date" />
+                        <input id="horaTarefa" type="time" />
+                        <input id="conteudoTarefa" type="text" />
+                        <button id="adicionarTarefa">Adicionar Tarefa</button>
+                    </div>
+                </section>
+                <div class="exibirTarefas">
+                    <div class="textoTarefas">
+                        <h3>Data</h3>
+                        <h3>Hora</h3>
+                        <h3>Tarefa</h3>
+                        <h3>Ações</h3>
+                    </div>
+                    <div class="tarefasTela">
+                        <div class="tarefa1">
+                            <h3 id="dias"></h3>
+                            <h3 id="horas"></h3>
+                            <h3 id="tarefa"></h3>
+                            <div class="icons">
+                                <i class="fa-solid fa-trash"></i>
+                                <i class="fa-regular fa-square-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/7aabcce838.js"></script>
+</body>
+
+</html>
