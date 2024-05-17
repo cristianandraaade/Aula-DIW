@@ -176,7 +176,7 @@ main {
                                     & .fa-square-check {
                                         font-size: 26px;
                                         cursor: pointer;
-                                        background-color: white;
+                                        color: black;
                                     }
 
                                     & .fa-square-check:hover {

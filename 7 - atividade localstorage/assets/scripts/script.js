@@ -40,7 +40,7 @@ function adicionarTarefa(data, hora, nomeTarefa) {
     let dadosObjeto = leituraDados();
     let tarefaAdicionar =
     {
-        'id': pegaID(),
+        'id': pegaID(dadosObjeto),
         'data': data,
         'hora': hora,
         'tarefa': nomeTarefa
@@ -59,30 +59,37 @@ function imprimeDados() {
             '<h3 id="horas">' + eachTarefas.hora + '</h3>' +
             '<h3 id="tarefa">' + eachTarefas.tarefa + '</h3>' +
             '<div class="icons">' +
-            '<button class="btnApagar"><i class="fa-solid fa-trash"></i></button>' +
+            '<button class="btnApagar" data-id='+ eachTarefas.id +'><i class="fa-solid fa-trash"></i></button>' +
             '<button class="btnCheck"><i class="fa-regular fa-square-check"></i></button>' +
             '</div>' +
             '</div>'
         document.querySelector('.tarefasTela').innerHTML += defaultHTML;
     });
-}
-
-let bntConfirm = document.querySelector('#bnt2');
-let colorBack = document.querySelector('#verify').backgroundColor;
-console.log(colorBack)
-bntConfirm.addEventListener('click', () => {
-    let backgroundColor = window.getComputedStyle(colorBack).backgroundColor;
-    console.log(backgroundColor)
-    if (backgroundColor === 'rgb(255, 255, 255)') {
-        bntConfirm.style.backgroundColor = 'rgba(22, 143, 22, 0.692)';
-    } else {
-        bntConfirm.style.backgroundColor = 'rgb(255, 255, 255)';
-    }
+    document.querySelectorAll('.btnCheck').forEach(function(eachBtn) {
+        eachBtn.addEventListener('click', function (){
+            let iconConfirm = eachBtn.querySelector('.fa-square-check');
+            let iconColor = window.getComputedStyle(iconConfirm).color;
+            if (iconColor == 'rgb(0, 0, 0)') {
+                iconConfirm.style.color = 'green';                
+            } else {
+                iconConfirm.style.color = 'rgb(0, 0, 0)';
+            }
+        })
+    });
+    document.querySelectorAll('.btnApagar').forEach(function(eachBtnApagar){
+        eachBtnApagar.addEventListener('click',function(){
+            const dataIDBtn = parseInt(eachBtnApagar.dataset.id);
+            const positionTarefas = dadosObjeto.tarefas.findIndex(tarefas => tarefas.id === dataIDBtn);            
+                dadosObjeto.tarefas.splice(positionTarefas, 1);
+                localStorage.setItem('database', JSON.stringify(dadosObjeto));
+                imprimeDados();
+        
+    });
 });
-
-function pegaID(){
+}
+function pegaID() {
     dadosObjeto = leituraDados();
     let tamanhoVetor = dadosObjeto.tarefas.length;
     return tamanhoVetor
-}
+};
 
